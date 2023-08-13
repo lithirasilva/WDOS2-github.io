@@ -74,36 +74,37 @@
     <div class="formcontainer">
     
       <br><div class="calendar"><br><br>
-        <p><strong>Day you will be visiting:</strong></p>
+        <label for="visit-date"><strong>Day you will be visiting:</strong></label>
         <input type="date" id="visit-date" name="datee">
         </div>
 
 
-      <div class="ticketType"><br>
-        <p>
-          <label for="slAdult">SL Adult:</label>
-          <input type="number" id="sl-adult" value="0" min="0">
-        </p><br>
-        <p>
-          <label for="slChild">SL Child:</label>
-          <input type="number" id="sl-child" value="0" min="0">
-        </p><br>
-        <p>
-          <label for="foreignAdult">Foreign Adult:</label>
-          <input type="number" id="foreigner-adult" value="0" min="0">
-        </p><br>
-        <p>
-          <label for="foreignChild">Foreign child:</label>
-          <input type="number" id="foreigner-child" value="0" min="0">
-        </p><br>
-        <p>
-          <label for="infant">Infant:</label>
-          <input type="number" id="infant" value="0" min="0">
-        </p><br>
-        </div>
+        <fieldset class="ticketType">
+          <legend>Ticket Types:</legend>
+          <p>
+              <label for="sl-adult">SL Adult:</label>
+              <input type="number" id="sl-adult" value="0" min="0">
+          </p><br>
+          <p>
+              <label for="sl-child">SL Child:</label>
+              <input type="number" id="sl-child" value="0" min="0">
+          </p><br>
+          <p>
+              <label for="foreigner-adult">Foreign Adult:</label>
+              <input type="number" id="foreigner-adult" value="0" min="0">
+          </p><br>
+          <p>
+              <label for="foreigner-child">Foreign child:</label>
+              <input type="number" id="foreigner-child" value="0" min="0">
+          </p><br>
+          <p>
+              <label for="infant">Infant:</label>
+              <input type="number" id="infant" value="0" min="0">
+          </p><br>
+      </fieldset>
 
       <div class="time-slots">
-        <label for="time-slot">Select a time slot:</label>
+        <label for="time-slot"><strong>Select a time slot:</strong></label>
         <select id="time-slot" multiple>
           <option value="07:00-08:00">07:00 am to 08:00 am</option>
           <option value="08:00-09:00">08:00 am to 09:00 am</option>
