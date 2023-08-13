@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Details.css">
+    <link rel="stylesheet" href="international-telephone-input-master/international-telephone-input-master/international-telephone-input.css">
+    <title>User Details</title>
+</head>
+<body>
+    <div class="navbar"><!--navigation bar begins here-->
+        <div class="logo-container"><!--logo for page is here-->
+            <a href="index.html"><img src="images/turtlogo.png" class="logo" alt="log"></a>
+        </div>
+    </div>
+    <div class="Maintitle"><!--Main Title above the banner-->
+        <h1>Buy Tickets</h1>
+    </div>
+    <div class="flex-container">
+    <div class="container">
+        <div class="heading">
+        <h1>Enter Your Details</h1>
+        </div>
+        <form id="user-form">
+            <label for="full-name">Full Name <span class="required">*</span></label>
+            <input type="text" id="full-name" required>
+
+            <div class="iti">
+                <label for="mobileNumber">Phone Number:</label><span class="required">*</span>
+                <input type="tel"  name="mobileNumber" required>
+            </div>
+
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" required>
+
+            <label for="confirm-email">Confirm Email <span class="required">*</span></label>
+            <input type="email" id="confirm-email" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <a href="Payments.html?summary=REPLACE_WITH_SUMMARY_DATA" id="purchase-link">
+                <button type="button" id="continue-button">Continue with Purchase</button></a>
+            
+            
+        </form>
+    </div>
+
+ 
+    <div id="summary">
+        <table>
+          <tr>
+              <th>Date:</th>
+              <td><span id="summary-date"></span> </td>
+              
+          </tr>
+          <tr>
+              <th>Time:</th>
+              <td><span id="summary-time"></span> </td>
+          </tr>
+          <tr>
+              <th>Duration:</th>
+              <td><span id="summary-duration"></span></td>
+          </tr>
+          
+          <tr>
+              <th class="bold">Tickets:</th>
+              <td class="bold">Charges</td>
+          </tr>
+         
+          
+          <tr>
+              <th><span id="summary-tickets"></span> </th>
+              <td><span id="summary-price"></span></td>
+          </tr>
+  
+      </table>
+    </div>
+    
+    </div>
+  
+      <br><br><br>
+  <footer class="foot"><!--footer begines here-->
+      <div class="right">
+          <p class="nav-links"><!--navigation bar links-->
+              <a href="index.html"><strong>Home</strong></a>
+              <a href="Contact.html"><strong>Contact </strong></a>
+              <a href="donate.html"><strong>Donate </strong></a>
+              <a href="Purchase.html"><strong>Purchase </strong></a>
+              <a href="Turtlecategories.html"><strong>Categories </strong></a>
+              <a href="Threatstoturtle.html"><strong>Threats </strong></a>
+              <a href="Hikkaduwa.html"><strong>Hikkaduwa </strong></a>
+              <a href="Otherhatcheries.html"><strong>Other hatcheries</strong></a>
+          </p>
+      <p class="abt">Shelly Turtle Hatchery is a dedicated conservation center, working tirelessly to protect and nurture sea turtles
+          ,raise awareness and ensure the survival of these magnificent creatures and their fragile marine habitats
+      </p>
+      <p class="reserved">&copy;2023 Shelly Turtle hatchery, All rights reserved</p>
+      <div class="terms">
+          <p><a href="#">Terms of use</a> | <a href="#">Privacy policy</a>
+      </div>
+      </div> 
+  </footer><!--end of footer-->
+  <!--https://www.peoplenotpoaching.org/saving-sea-turtles-->
+  <!--https://conserveturtles.org/information-about-sea-turtles-an-introduction/#:~:text=Sea%20turtles%20come%20in%20many,shape%20and%20arrangement%20of%20scales.-->
+  <!--https://www.htrcc.info/about.html-->
+  <!--http://kosgodaseaturtle.org/-->
+  <!--https://www.ateasehotel.com/turtles-in-hikkaduwa/-->
+  
+
+  <script src="JavaScript/international-telephone-input.js"></script>
+  <script src="JavaScript/Details.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shelly Hatchery</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet"  href="css/Ticketbooking.css" ><!--external css file-->
+</head>
+<body>
+    <div class="navbar"><!--navigation bar begines here-->
+        <div class="logo-container"><!--logo for page is here-->
+            <a href="index.html"><img src="images/turtlogo.png" class="logo" alt="log"></a>
+        </div>
+    </div>
+    <div class="Maintitle"><!--Main Titlle above the banner-->
+        <h1>Buy Tickets</h1>
+    </div>
+    <div class="heading">
+    <h1>Purchase Tickets</h1>
+    </div>
+      <div class="book-tickets">
+
+      <div class="ticketsPriceTable">
+      <table>
+          <tr>
+            <th>Timing</th>
+            <th>SL Adults</th>
+            <th>Foreign Adults</th>
+            <th>SL Child</th>
+            <th>Foreign Child</th>
+            <th>Infants</th>
+          </tr>
+          <tr>
+            <td><strong>07:00 AM - 10:00 AM</strong></td>
+            <td>4 USD</td>
+            <td>10 USD</td>
+            <td>2 USD</td>
+            <td>5 USD</td>
+            <td>0 USD</td>
+          </tr>
+           
+          <tr class="peak-hour">
+            <td><strong>10:00 AM - 01:00 AM</strong></td>
+            <td>6 USD</td>
+            <td>13 USD</td>
+            <td>3 USD</td>
+            <td>8 USD</td>
+            <td>0 USD</td>
+          </tr>
+          
+          <tr>
+            <td><strong>01:00 PM - 03:00 PM</strong></td>
+            <td>4 USD</td>
+            <td>10 USD</td>
+            <td>2 USD</td>
+            <td>5 USD</td>
+            <td>0 USD</td>
+          </tr>
+        
+          <tr class="peak-hour">
+            <td><strong>03:00 PM - 06:00 PM</strong></td>
+            <td>6 USD</td>
+            <td>13 USD</td>
+            <td>3 USD</td>
+            <td>8 USD</td>
+            <td>0 USD</td>
+          </tr>
+        </table>
+  
+    </div>
+    <br><br>
+    
+    <form>
+    <div class="formcontainer">
+    
+      <br><div class="calendar"><br><br>
+        <p><strong>Day you will be visiting:</strong></p>
+        <input type="date" id="visit-date" name="datee">
+        </div>
+
+
+      <div class="ticketType"><br>
+        <p>
+          <label for="slAdult">SL Adult:</label>
+          <input type="number" id="sl-adult" value="0" min="0">
+        </p><br>
+        <p>
+          <label for="slChild">SL Child:</label>
+          <input type="number" id="sl-child" value="0" min="0">
+        </p><br>
+        <p>
+          <label for="foreignAdult">Foreign Adult:</label>
+          <input type="number" id="foreigner-adult" value="0" min="0">
+        </p><br>
+        <p>
+          <label for="foreignChild">Foreign child:</label>
+          <input type="number" id="foreigner-child" value="0" min="0">
+        </p><br>
+        <p>
+          <label for="infant">Infant:</label>
+          <input type="number" id="infant" value="0" min="0">
+        </p><br>
+        </div>
+
+      <div class="time-slots">
+        <label for="time-slot">Select a time slot:</label>
+        <select id="time-slot" multiple>
+          <option value="07:00-08:00">07:00 am to 08:00 am</option>
+          <option value="08:00-09:00">08:00 am to 09:00 am</option>
+          <option value="09:00-10:00">09:00 am to 10:00 am</option>
+          <option value="10:00-11:00">10:00 am to 11:00 am</option>
+          <option value="11:00-12:00">11:00 am to 12:00 pm</option>
+          <option value="12:00-13:00">12:00 pm to 01:00 pm</option>
+          <option value="13:00-14:00">01:00 pm to 02:00 pm</option>
+          <option value="14:00-15:00">02:00 pm to 03:00 pm</option>
+          <option value="15:00-16:00">03:00 pm to 04:00 pm</option>
+          <option value="16:00-17:00">04:00 pm to 05:00 pm</option>
+          <option value="17:00-18:00">05:00 pm to 06:00 pm</option>
+        </select>
+      </div>
+      
+    </div>
+      <br><br>
+
+      <div id="summary">
+      <table>
+        <tr>
+            <th>Date:</th>
+            <td><span id="summary-date"></span> </td>
+            
+        </tr>
+        <tr>
+            <th>Time:</th>
+            <td><span id="summary-time"></span> </td>
+        </tr>
+        <tr>
+            <th>Duration:</th>
+            <td><span id="summary-duration"></span></td>
+        </tr>
+        
+        <tr>
+            <th class="bold">Tickets:</th>
+            <td class="bold">Charges</td>
+        </tr>
+       
+        </tr>
+        <tr>
+            <th><span id="summary-tickets"></span> </th>
+            <td><span id="summary-price"></span></td>
+        </tr>
+       
+        <tr>
+            <th class="bold">Total Payable</th>
+            <td class="bold"><div id="summary-total"></div> </td>
+        </tr>
+
+    </table>
+      </div>
+  </div>
+
+<a href="Details.html?summary=REPLACE_WITH_SUMMARY_DATA" id="purchase-link" target="">
+  <button type="button" id="continue-button">Continue with Purchase</button>
+</a>
+      </div>
+
+  </form>
+
+</section>
+</div>
+
+</div>
+
+    <br><br><br>
+<footer class="foot"><!--footer begines here-->
+    <div class="right">
+        <p class="nav-links"><!--navigation bar links-->
+            <a href="index.html"><strong>Home</strong></a>
+            <a href="Contact.html"><strong>Contact </strong></a>
+            <a href="donate.html"><strong>Donate </strong></a>
+            <a href="Purchase.html"><strong>Purchase </strong></a>
+            <a href="Turtlecategories.html"><strong>Categories </strong></a>
+            <a href="Threatstoturtle.html"><strong>Threats </strong></a>
+            <a href="Hikkaduwa.html"><strong>Hikkaduwa </strong></a>
+            <a href="Otherhatcheries.html"><strong>Other hatcheries</strong></a>
+        </p>
+    <p class="abt">Shelly Turtle Hatchery is a dedicated conservation center, working tirelessly to protect and nurture sea turtles
+        ,raise awareness and ensure the survival of these magnificent creatures and their fragile marine habitats
+    </p>
+    <p class="reserved">&copy;2023 Shelly Turtle hatchery, All rights reserved</p>
+    <div class="terms">
+        <p><a href="#">Terms of use</a> | <a href="#">Privacy policy</a>
+    </div>
+    </div> 
+</footer><!--end of footer-->
+<!--https://www.peoplenotpoaching.org/saving-sea-turtles-->
+<!--https://conserveturtles.org/information-about-sea-turtles-an-introduction/#:~:text=Sea%20turtles%20come%20in%20many,shape%20and%20arrangement%20of%20scales.-->
+<!--https://www.htrcc.info/about.html-->
+<!--http://kosgodaseaturtle.org/-->
+<!--https://www.ateasehotel.com/turtles-in-hikkaduwa/-->
+
+<script src="JavaScript/Tickets.js"></script>
+</body>
+</html>

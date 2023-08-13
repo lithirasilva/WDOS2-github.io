@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="css/Payments.css"> <!-- Add your CSS file for payment page styles -->
+    <title>Payment Page</title>
+</head>
+<body>
+     
+    <div class="navbar"><!--navigation bar begines here-->
+        <div class="logo-container"><!--logo for page is here-->
+            <a href="index.html"><img src="images/turtlogo.png" class="logo" alt="log"></a>
+        </div>
+    </div>
+    <div class="Maintitle"><!--Main Titlle above the banner-->
+        <h1>Buy Tickets</h1>
+    </div>
+<div class="section1">
+    <h1>ENTER YOUR DETAILS</h1>
+</div>
+<div class="container"><!--content start here-->
+    <form action=","><!--form starts here-->
+        <div class="row">
+            <div class="col">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Payment</h3><!--details for payment-->
+                    <div class="inputBox">
+                        <span>Card accepted :</span>
+                        <img src="images/card_img.png" alt="crd">
+                    <div class="inputBox">
+                        <span>Name on card :</span>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="inputBox">
+                        <span>Credit card number :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                        <span>exp month :</span>
+                        <input type="text" placeholder="January/February etc.">
+                    </div>
+                    <div class="inputBox">
+                        <span>City :</span>
+                        <input type="text" placeholder="City">
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>exp year :</span>
+                            <input type="number" placeholder="2024">
+                        </div>
+                        <div class="inputBox">
+                            <span>cvv</span>
+                            <input type="text" placeholder="1234">
+                        </div>
+                </div>
+            </div>
+        </div>
+            </div>
+            <a href="Confirmation.html?summary=REPLACE_WITH_SUMMARY_DATA" id="purchase-link">
+                <button type="button" id="continue-button">Continue with Purchase</button>
+            </a>
+        
+            </div>
+        
+        </div>
+    </form><!--form ends here-->
+</div>
+
+    <div id="summary">
+        <table>
+          <tr>
+              <th>Date:</th>
+              <td><span id="summary-date"></span> </td>
+              
+          </tr>
+          <tr>
+              <th>Time:</th>
+              <td><span id="summary-time"></span> </td>
+          </tr>
+          <tr>
+              <th>Duration:</th>
+              <td><span id="summary-duration"></span></td>
+          </tr>
+          
+          <tr>
+              <th class="bold">Tickets:</th>
+              <td class="bold">Charges</td>
+          </tr>
+         
+          <tr>
+              <th><span id="summary-tickets"></span> </th>
+              <td><span id="summary-price"></span></td>
+          </tr>
+        
+  
+      </table>
+    </div>
+
+
+<script src="JavaScript/Payments.js"></script>
+<br><br><br>
+<footer class="foot"><!--footer begines here-->
+    <div class="right">
+        <p class="nav-links"><!--navigation bar links-->
+            <a href="index.html"><strong>Home</strong></a>
+            <a href="Contact.html"><strong>Contact </strong></a>
+            <a href="donate.html"><strong>Donate </strong></a>
+            <a href="Purchase.html"><strong>Purchase </strong></a>
+            <a href="Turtlecategories.html"><strong>Categories </strong></a>
+            <a href="Threatstoturtle.html"><strong>Threats </strong></a>
+            <a href="Hikkaduwa.html"><strong>Hikkaduwa </strong></a>
+            <a href="Otherhatcheries.html"><strong>Other hatcheries</strong></a>
+        </p>
+    <p class="abt">Shelly Turtle Hatchery is a dedicated conservation center, working tirelessly to protect and nurture sea turtles
+        ,raise awareness and ensure the survival of these magnificent creatures and their fragile marine habitats
+    </p>
+    <p class="reserved">&copy;2023 Shelly Turtle hatchery, All rights reserved</p>
+    <div class="terms">
+        <p><a href="#">Terms of use</a> | <a href="#">Privacy policy</a>
+    </div>
+    </div> 
+
+
+</footer><!--end of footer-->
+<!--https://www.peoplenotpoaching.org/saving-sea-turtles-->
+<!--https://conserveturtles.org/information-about-sea-turtles-an-introduction/#:~:text=Sea%20turtles%20come%20in%20many,shape%20and%20arrangement%20of%20scales.-->
+<!--https://www.htrcc.info/about.html-->
+<!--http://kosgodaseaturtle.org/-->
+<!--https://www.ateasehotel.com/turtles-in-hikkaduwa/-->
+</body>
+</html>
